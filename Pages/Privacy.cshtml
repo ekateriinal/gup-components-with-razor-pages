@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "My Razor Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <h1>Welcome to Razor Pages!</h1>
+    <p>The current time is: @DateTime.Now</p>
+
+    <ul>
+        @for (int i = 1; i <= 5; i++)
+        {
+            <li>Item @i</li>
+        }
+    </ul>
+</body>
+</html>

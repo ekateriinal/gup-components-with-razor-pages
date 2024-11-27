@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "GUP Dropdown Example";
+}
+
+<h1>Dropdown Component Example</h1>
+<gup-dropdown-field name="name-of-the-field" placeholder="Select an item">
+  <span slot="label">Label</span>
+  <gup-dropdown-menu search-enabled="">
+    <gup-dropdown-menu-item label="Item number 1" id="item1" value="item1" role="listitem" visible=""></gup-dropdown-menu-item>
+    <gup-dropdown-menu-item
+      label="Item number 2, with fallen dream thrown vast note completely settlers forty fall game"
+      id="item2"
+      value="item2"
+      role="listitem"
+      visible=""></gup-dropdown-menu-item>
+    <gup-dropdown-menu-item label="Item 3" id="item3" value="item3" role="listitem" visible=""></gup-dropdown-menu-item>
+    <gup-dropdown-menu-item
+      label="Item number 4, with sünnipäevanädalalõpupeopärastlõunaväsimatus"
+      id="item4"
+      value="item4"
+      role="listitem"
+      visible=""></gup-dropdown-menu-item>
+    <gup-dropdown-menu-item label="Item number 5" id="item5" value="item5" role="listitem" visible=""></gup-dropdown-menu-item>
+    <gup-track
+      slot="controls"
+      horizontal-alignment="right"
+      direction="horizontal"
+      style="--gap: calc(2 * var(--unit)); --horizontal-alignment: flex-end; --vertical-alignment: ; --direction: row;">
+      <gup-button kind="button" type="button" appearance="primary">Apply</gup-button>
+    </gup-track>
+  </gup-dropdown-menu>
+</gup-dropdown-field>
+
+<h1>Input Field Component Example</h1>
+<gup-input-field type="email" name="your-message">Email</gup-input-field>
+<gup-input-field type="tel" name="your-message" placeholder="+96812345678" pattern="\+968[0-9]{8}">Phone number</gup-input-field>
+<gup-input-field name="your-message" type="text">Name</gup-input-field>
+<gup-input-field type="number" name="your-message">Your message</gup-input-field>
